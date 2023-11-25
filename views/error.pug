@@ -1,0 +1,9 @@
+extends layout.pug
+
+block content
+    nav.nav
+        a(href='/')
+            span &larr;
+            |  Back
+    .box
+        h1= `${error.message} - Status: ${error.status}` 
