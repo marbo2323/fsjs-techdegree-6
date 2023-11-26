@@ -11,4 +11,4 @@ Project 6 for full-stack JavaScript developer Teamtreehouse's technical degree p
 - From your command line or terminal, install all dependencies using `npm install` command. 
 
 ### Run App
-- Use `npm start` to start the application on localhost:3000.
+- Use `node app.js` to start the application on localhost:3000.
