@@ -4,6 +4,8 @@ const { notFoundError } = require("./utils");
 
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 app.use("/static", express.static("public"));
 app.set("view engine", "pug");
 
@@ -39,6 +41,6 @@ app.use((err, req, res, next) => {
   res.render("error");
 });
 
-app.listen(3000, () => {
-  console.log("The application is running on localhost:3000!");
+app.listen(port, "0.0.0.0", () => {
+  console.log(`The application is running on localhost:${port}!`);
 });
